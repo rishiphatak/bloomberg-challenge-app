@@ -5,4 +5,5 @@ channels:
   - defaults
 dependencies:
   - joblib=1.1.0=pyhd3eb1b0_0
+  - scikit-learn
 prefix: C:\Users\Rishi2\Anaconda3
