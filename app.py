@@ -44,4 +44,7 @@ description = st.text_area('Description')
 submitted = st.button("Submit")
 
 if submitted:
-    st.write(categories[clf.predict(np.array([my_embedding(description)]).reshape(1, -1))[0]])
+    embedding = my_embedding(description)
+    if embedding is None:
+        st.write('API is down')
+    st.write("### " + categories[clf.predict(np.array([embedding]).reshape(1, -1))[0]])
