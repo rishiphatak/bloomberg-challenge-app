@@ -1,0 +1,8 @@
+name: base
+channels:
+  - conda-forge
+  - plotly
+  - defaults
+dependencies:
+  - joblib=1.1.0=pyhd3eb1b0_0
+prefix: C:\Users\Rishi2\Anaconda3

@@ -31,7 +31,7 @@ def my_embedding(text):
 
 st. title("News article classification with Bloomberg!")
 
-clf = load('../classifier_2.joblib') 
+clf = load('classifier_2.joblib') 
 
 categories = [
     'COMEDY', 'WORLD NEWS', 'CULTURE & ARTS', 'TECH', 'SPORTS', 'ENTERTAINMENT', 'POLITICS'
