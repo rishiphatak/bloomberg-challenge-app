@@ -6,4 +6,5 @@ channels:
 dependencies:
   - joblib=1.1.0=pyhd3eb1b0_0
   - scikit-learn
+  - numpy
 prefix: C:\Users\Rishi2\Anaconda3

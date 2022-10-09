@@ -3,6 +3,7 @@ from joblib import load
 from time import sleep
 import json
 import requests
+import numpy as np
 
 def get_embedding(text, api_key):
     ## API Definitions
@@ -43,4 +44,4 @@ description = st.text_area('Description')
 submitted = st.button("Submit")
 
 if submitted:
-    st.write(categories[clf.predict([my_embedding(description)])[0]])
+    st.write(categories[clf.predict(np.array([my_embedding(description)]).reshape(1, -1))[0]])
